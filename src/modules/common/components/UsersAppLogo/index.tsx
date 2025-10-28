@@ -11,19 +11,20 @@ interface UsersAppLogoProps {
 
 export const UsersAppLogo: FC<UsersAppLogoProps> = ({
   size = 40,
-  color = "#000",
+  color = "#fff",
 }) => {
   return (
-    <Flex vertical align="center" justify="center">
+    <Flex align="center" justify="center" gap={6}>
       <UserOutlined style={{ fontSize: size, color }} />
       <Title
         style={{
+          margin: 0,
           color,
           fontSize: size * 0.8,
         }}
         level={4}
       >
-        User App
+        Users App
       </Title>
     </Flex>
   );
