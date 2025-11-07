@@ -2,7 +2,14 @@
   max-width: $layout-max-width;
   margin: 0 auto;
   min-height: $layout-min-height;
-  background: $color-bg-content;
+
+  .header {
+    background: $color-bg-header;
+  }
+
+  .content {
+    background-color: $color-bg-content;
+  }
 
   .footer {
     background: $color-bg-footer;

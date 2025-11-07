@@ -3,20 +3,21 @@ import { getCurrentFullYear } from "../../utils/getCurrentFullYear";
 import { UsersAppLogo } from "../UsersAppLogo";
 import { Nav } from "../Nav";
 import styles from "./styles.module.scss";
+import { Outlet } from "react-router-dom";
 
 const { Header, Content, Footer } = Layout;
 
-export const MainLayout = ({ children }: { children: React.ReactNode }) => {
+export const MainLayout = () => {
   return (
     <Layout className={styles.layout}>
-      <Header>
+      <Header className={styles.Header}>
         <Flex justify="space-between">
           <UsersAppLogo size={25} />
           <Nav />
         </Flex>
       </Header>
 
-      <Content>{children}</Content>
+      <Content className={styles.content}><Outlet /></Content>
 
       <Footer className={styles.footer}>
         <Flex vertical align="center" justify="center" gap={8}>
