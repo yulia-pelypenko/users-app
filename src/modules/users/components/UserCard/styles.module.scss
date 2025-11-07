@@ -1,0 +1,25 @@
+.card {
+  width: 100%;
+  max-width: 340px;
+  margin: auto;
+  height: 500px;
+  padding: 15px;
+  background-color: $color-user-card;
+
+  :global(.ant-card-actions) {
+    background-color: $color-user-card;
+  }
+
+  .userInfo {
+    min-height: 100px;
+  }
+
+  .divider {
+    margin: 0;
+  }
+
+  .weatherBlock {
+    min-height: 70px;
+    display: flex;
+  }
+}
