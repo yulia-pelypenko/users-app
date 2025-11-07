@@ -1,0 +1,48 @@
+.compass {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  color: #999;
+
+  &.N {
+    top: 5%;
+    left: 50%;
+  }
+
+  &.E {
+    top: 50%;
+    left: 95%;
+  }
+
+  &.S {
+    top: 95%;
+    left: 50%;
+  }
+
+  &.W {
+    top: 50%;
+    left: 5%;
+  }
+}
+
+.arrow {
+  font-size: 36px;
+  color: #1890ff;
+  transition: transform 0.3s ease;
+}
+
+.info {
+  font-size: 14px;
+  color: #555;
+}
